@@ -28,9 +28,8 @@ if(isset($_GET['id']) && is_numeric($_GET['id']) && ($_GET['id'] > 0)) {
                <?php 
                   htmlspecialchars($row['quote']);
                ?>
-            </blockquote>
+            </blockquote>--
                <?php
-                  echo '--';
                   htmlspecialchars($row['source']);
                   if($row['favorite']) echo '<strong>Yêu thích!</strong>';
                ?>
